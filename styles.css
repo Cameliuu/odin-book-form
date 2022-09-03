@@ -36,6 +36,10 @@ h1{
     height: fit-content;
     text-align: center;
     width: 100%;
-    border:1px solid blue;
-    margin-top:2.5vh;
+    margin-top:1vh;
+}
+h1{
+    font-family: "Bungee Shade";
+    color:ghostwhite;
+    font-size:3rem;
 }
