@@ -37,9 +37,11 @@ h1{
     text-align: center;
     width: 100%;
     margin-top:1vh;
+
 }
 h1{
     font-family: "Bungee Shade";
     color:ghostwhite;
     font-size:3rem;
+    text-shadow: deeppink 1px 0 10px;
 }
