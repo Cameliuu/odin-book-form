@@ -54,6 +54,9 @@ function formatBox(box,titleV,authorV,pagesV,readV)
     let author = document.createElement("p");
     let pages = document.createElement("p");
     let read = document.createElement("p");
+    let close = document.createElement("button");
+    close.classList.add("close-btn");
+    close.innerHTML="X";
     title.innerHTML=`Title:${titleV}`;
     author.innerHTML=`Author:${authorV}`;
     pages.innerHTML=`Pages:${pagesV}`;
@@ -62,6 +65,7 @@ function formatBox(box,titleV,authorV,pagesV,readV)
     box.appendChild(author);
     box.appendChild(pages);
     box.appendChild(read);
+    box.appendChild(close);
 
 }
 
