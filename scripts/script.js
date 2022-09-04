@@ -16,7 +16,7 @@ let myBooks=[
         read: false
     }
 ];
-function Book(title,author,pages,read){
+function Book(title,author,pages,read,posted){
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -38,11 +38,13 @@ function addBookToArray(book)
 $submit.addEventListener("click", () => {
    let newBook = new Book(title.value,author.value,pages.value,read.value);
    if(addBookToArray(newBook))
-    myBooks.slice(1).forEach((book) => {
-            const box = document.createElement("div");
-            box.classList.add("box");
-            $container.appendChild(box);
-            formatBox(box,book.title, book.author, book.pages, book.read);
+    myBooks.slice(size).forEach((book) => {
+                console.log("intra");
+                const box = document.createElement("div");
+                box.classList.add("box");
+                $container.appendChild(box);
+                formatBox(box, book.title, book.author, book.pages, book.read);
+        size++;
     })
    console.log(myBooks);
 });
