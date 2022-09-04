@@ -3,6 +3,9 @@
     --secondary:#734b6d;
     --primary-form:#8e9eab;
     --secondary-form: #eef2f3;
+    --btn-primary:#4568DC;
+    --btn-secondary: #B06AB3;
+
 }
 html,body{
     width: 100%;
@@ -29,6 +32,10 @@ h1{
     height: 70%;
     width: 50%;
     border-radius: 2%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .text-container{
@@ -44,4 +51,53 @@ h1{
     color:ghostwhite;
     font-size:3rem;
     text-shadow: deeppink 1px 0 10px;
+}
+.button-container
+{
+    height: 4vh;
+    width: 2vw;
+    position:absolute;
+    top:90%
+}
+.button-container:hover
+{
+    width: fit-content;
+    height: fit-content;
+}
+.add-button
+{
+
+    font-size:1rem;
+    border-color: #42275a;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg,var(--btn-primary),var(--btn-secondary));
+    font-family: "Bungee Shade";
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.add-button:hover::after{
+content:" Add book";
+
+}
+
+.add-button:hover{
+    border-radius: 12px;
+    height: 5vh;
+    width: 10vh;
+}
+.book-dialog{
+    position: relative;
+    height: 40%;
+    width: 20%;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+.box{
+    text-align: center;
+    height: 30vh;
+    width: 10vw;
+    border:1px solid blue;
 }
